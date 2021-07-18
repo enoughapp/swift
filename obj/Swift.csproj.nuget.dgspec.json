@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/panitarn/Projects/Swift/Swift.csproj": {}
+    "/Users/panitarn/Desktop/Enough/Swift/Swift.csproj": {}
   },
   "projects": {
-    "/Users/panitarn/Projects/Swift/Swift.csproj": {
+    "/Users/panitarn/Desktop/Enough/Swift/Swift.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/panitarn/Projects/Swift/Swift.csproj",
+        "projectUniqueName": "/Users/panitarn/Desktop/Enough/Swift/Swift.csproj",
         "projectName": "Swift",
-        "projectPath": "/Users/panitarn/Projects/Swift/Swift.csproj",
+        "projectPath": "/Users/panitarn/Desktop/Enough/Swift/Swift.csproj",
         "packagesPath": "/Users/panitarn/.nuget/packages/",
-        "outputPath": "/Users/panitarn/Projects/Swift/obj/",
+        "outputPath": "/Users/panitarn/Desktop/Enough/Swift/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/panitarn/.nuget/NuGet/NuGet.Config"
@@ -38,6 +38,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.95.4, )"
+            },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[5.0.6, )"

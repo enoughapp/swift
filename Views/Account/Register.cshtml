@@ -1,11 +1,11 @@
-﻿<h2>Register</h2>
+﻿@model UserAccount
+<h2>Register</h2>
 
 <div>
-    <form>
-        <input placeholder="Username">
-        <input placeholder="Password">
-
-        <button>Register</button>
+    <form asp-action="RegisterAction">
+        <input asp-for="Username" name="Username" id="Username" required>
+        <input asp-for="Password" name="Password" id="Password" required>
+        <button class="btn btn-success" type="submit" placeholder="Register">
     </form>
 </div>
 

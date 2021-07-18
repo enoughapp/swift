@@ -1,11 +1,10 @@
-﻿<h2>Login</h2>
+﻿@model UserAccount
+<h2>Login</h2>
 
 <div>
-    <form>
-        <input placeholder="Username">
-        <input placeholder="Password">
-
-        <button>Login</button>
+    <form asp-action="LoginAction">
+        <input asp-for="Username" name="Username" id="Username">
+        <input asp-for="Password" name="Password" id="Password">
+        <button class="btn btn-success" type="submit">
     </form>
 </div>
-

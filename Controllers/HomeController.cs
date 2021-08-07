@@ -15,8 +15,6 @@ namespace Swift.Controllers
         public IActionResult Index()
         {
             return View();
-        }
-
-        
+        }        
     }
 }

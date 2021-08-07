@@ -116,12 +116,8 @@
 /Users/panitarn/Desktop/Enough/Swift/obj/Debug/net5.0/Swift.TagHelpers.input.cache
 /Users/panitarn/Desktop/Enough/Swift/obj/Debug/net5.0/Swift.TagHelpers.output.cache
 /Users/panitarn/Desktop/Enough/Swift/obj/Debug/net5.0/Swift.RazorCoreGenerate.cache
-/Users/panitarn/Desktop/Enough/Swift/obj/Debug/net5.0/Razor/Views/Account/Login.cshtml.g.cs
-/Users/panitarn/Desktop/Enough/Swift/obj/Debug/net5.0/Razor/Views/Account/Profile.cshtml.g.cs
-/Users/panitarn/Desktop/Enough/Swift/obj/Debug/net5.0/Razor/Views/Account/Register.cshtml.g.cs
 /Users/panitarn/Desktop/Enough/Swift/obj/Debug/net5.0/Razor/Views/Admin/Index.cshtml.g.cs
 /Users/panitarn/Desktop/Enough/Swift/obj/Debug/net5.0/Razor/Views/Home/Index.cshtml.g.cs
-/Users/panitarn/Desktop/Enough/Swift/obj/Debug/net5.0/Razor/Views/Shared/Error.cshtml.g.cs
 /Users/panitarn/Desktop/Enough/Swift/obj/Debug/net5.0/Razor/Views/Shared/_Layout.cshtml.g.cs
 /Users/panitarn/Desktop/Enough/Swift/obj/Debug/net5.0/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
 /Users/panitarn/Desktop/Enough/Swift/obj/Debug/net5.0/Razor/Views/_ViewImports.cshtml.g.cs
@@ -138,3 +134,8 @@
 /Users/panitarn/Desktop/Enough/Swift/bin/Debug/net5.0/DocumentFormat.OpenXml.dll
 /Users/panitarn/Desktop/Enough/Swift/bin/Debug/net5.0/ExcelNumberFormat.dll
 /Users/panitarn/Desktop/Enough/Swift/bin/Debug/net5.0/System.IO.Packaging.dll
+/Users/panitarn/Desktop/Enough/Swift/bin/Debug/net5.0/BCrypt.Net-Next.dll
+/Users/panitarn/Desktop/Enough/Swift/obj/Debug/net5.0/Razor/Views/Account/ErrorAccount.cshtml.g.cs
+/Users/panitarn/Desktop/Enough/Swift/obj/Debug/net5.0/Razor/Views/Account/Login.cshtml.g.cs
+/Users/panitarn/Desktop/Enough/Swift/obj/Debug/net5.0/Razor/Views/Account/Profile.cshtml.g.cs
+/Users/panitarn/Desktop/Enough/Swift/obj/Debug/net5.0/Razor/Views/Account/Register.cshtml.g.cs

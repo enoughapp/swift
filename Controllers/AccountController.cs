@@ -1,4 +1,6 @@
+using System;
 using System.Linq;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Swift.Models;
 
@@ -12,48 +14,106 @@ namespace Swift.Controllers
             _context = context;
         }
 
-        [Route("/account/register")]
-        public IActionResult Register()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        public IActionResult RegisterAction(UserAccount userAccount)
-        {
-            var user = new UserAccount 
-            { 
-                Username = userAccount.Username,
-                Password = userAccount.Password
-            }; 
-            _context.Add(user);
-            _context.SaveChanges(); 
-            return RedirectToAction("Index", "Home"); 
-        }
-
-        [Route("/account/login")]
-        public IActionResult Login(UserAccount userAccount)
-        {
-            return View();
-        }
-
-        [HttpPost]
-        public IActionResult LoginAction(UserAccount userAccount)
+        [HttpGet]
+        [Route("/register")]
+        public ViewResult Register()
         { 
-            var lg = _context.Users.Where(a => a.Username.Equals(userAccount.Username) && a.Password.Equals(userAccount.Password)).FirstOrDefault();
-            if (lg != null)
+            if(HttpContext.Session.GetString("username") == null) 
             {
-                return RedirectToAction("Profile", "Account");
-            } else
+                return View();
+            } else 
             {
-                return RedirectToAction("Login","Account");
+                return View("Profile");
             }
         }
 
-        [Route("/account/profile")]
+        [Route("register")]
+        [HttpPost]
+        public IActionResult Register(UserAccount account)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = new UserAccount 
+                { 
+                    Username = account.Username,
+                    Password = BCrypt.Net.BCrypt.HashPassword(account.Password),
+                    Email = account.Email,
+                    Dob = account.Dob, 
+                    Occupation =account.Occupation,
+                    Income = account.Income,
+                    SocialMediaLink = account.SocialMediaLink,
+                    Telephone = account.Telephone,
+                    CreatedAt = DateTime.Now
+                };
+                _context.Add(user);
+                _context.SaveChanges(); 
+                return RedirectToAction("Login");
+            }
+            return View();
+        }
+
+        [Route("/login")]
+        public IActionResult Login(UserAccount userAccount)
+        {
+            if(HttpContext.Session.GetString("username") == null) 
+            {
+                return View();
+            } 
+            else 
+            {
+                return View("Profile");
+            }
+        }
+
+        [HttpPost]
+        public IActionResult LoginAction(UserAccount account)
+        {
+            var verifyUser = LoginProcess(account.Username, account.Password);
+            if (verifyUser == null)
+            {
+                return RedirectToAction("ErrorAccount");
+            }
+            else
+            {
+                HttpContext.Session.SetString("username", account.Username);
+                return RedirectToAction("Profile");
+            }
+        }
+
+        private UserAccount LoginProcess(string username, string password)
+        {
+            var account = _context.Users.SingleOrDefault(a => a.Username.Equals(username));
+            if(account != null)
+            {
+                if (BCrypt.Net.BCrypt.Verify(password, account.Password))
+                {
+                    return account;
+                }
+            }
+            return null;
+        }
+
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Remove("username");
+            return RedirectToAction("Login");
+        }
+
+        [Route("/profile")]
         public IActionResult Profile()
+        {
+            if (HttpContext.Session.GetString("username") == null)
+            {
+                return View("ErrorAccount");
+            }
+            return View();
+        }
+
+        [Route("/error-account")]
+        public IActionResult ErrorAccount()
         {
             return View();
         }
+
     }
 }

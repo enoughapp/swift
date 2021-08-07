@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "cr1dRlsIRTC1RP4Uyrly/ExEdAMrU9e5Ytz9i8mvqkQfIzwSz6bSeHJRHv015F9mo6D8oXNbQ2NZyNR+bQ9B+w==",
+  "dgSpecHash": "ZFbeB5RsxfuGtdI6vIn4H4Hl9FU4dvQZPNCB3HmUc55UuGSwCQkjSYqca0N5EJMVl5iUwdLpKeKiOM7BK7uejQ==",
   "success": true,
   "projectFilePath": "/Users/panitarn/Desktop/Enough/Swift/Swift.csproj",
   "expectedPackageFiles": [
+    "/Users/panitarn/.nuget/packages/bcrypt.net-next/4.0.2/bcrypt.net-next.4.0.2.nupkg.sha512",
     "/Users/panitarn/.nuget/packages/closedxml/0.95.4/closedxml.0.95.4.nupkg.sha512",
     "/Users/panitarn/.nuget/packages/documentformat.openxml/2.7.2/documentformat.openxml.2.7.2.nupkg.sha512",
     "/Users/panitarn/.nuget/packages/excelnumberformat/1.0.10/excelnumberformat.1.0.10.nupkg.sha512",

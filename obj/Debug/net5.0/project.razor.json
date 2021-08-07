@@ -15624,6 +15624,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/panitarn/Desktop/Enough/Swift/Views/Account/ErrorAccount.cshtml",
+      "TargetPath": "Views\\Account\\ErrorAccount.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/panitarn/Desktop/Enough/Swift/Views/Admin/Index.cshtml",
       "TargetPath": "Views\\Admin\\Index.cshtml",
       "FileKind": "mvc"
@@ -15636,11 +15641,6 @@
     {
       "FilePath": "/Users/panitarn/Desktop/Enough/Swift/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/panitarn/Desktop/Enough/Swift/Views/Shared/Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {

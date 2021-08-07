@@ -1,11 +1,64 @@
-﻿<h2>Register</h2>
+﻿@model UserAccount
 
-<div>
-    <form>
-        <input placeholder="Username">
-        <input placeholder="Password">
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
 
-        <button>Register</button>
-    </form>
+<section id="hero" class="d-flex align-items-center">
+    <div class="container-fluid" data-aos="fade-up">
+        <div class="row justify-content-center">
+            <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                <h1>Register</h1>
+            </div>
+            <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
+                <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container-fluid mt-5">
+    <h2 class="text-center">Register</h2>
+
+    <div>
+        <form class="text-center" asp-controller="Account" method="post" asp-action="Register">
+            <div class="col-md-6 offset-md-3">
+                <input class="form-control" asp-for="Username" name="Username" id="Username" placeholder="Username" 
+                    required><br>
+                <span asp-validation-for="Username" class="text-danger"></span><br>
+
+                <input type="password" class="form-control mt-1" asp-for="Password" name="Password" id="Password" placeholder="Password"
+                    required><br>
+                <span asp-validation-for="Password" class="text-danger"></span><br>
+
+                <input class="form-control mt-1" asp-for="Email" name="Email" id="Email" placeholder="E-mail"
+                    required><br>
+                <span asp-validation-for="Email" class="text-danger"></span><br>
+
+                <input class="form-control mt-1" asp-for="Dob" name="Dob" id="Dob" placeholder="Date Of Birth"
+                    required><br>
+                <span asp-validation-for="Dob" class="text-danger"></span><br>
+                
+                <input class="form-control mt-1" asp-for="Occupation" name="Occupation" id="Occupation"
+                    placeholder="Occupation" required><br>
+                <span asp-validation-for="Occupation" class="text-danger"></span><br>
+
+                <input class="form-control mt-1" asp-for="Income" name="Income" id="Income" placeholder="Income"
+                    required><br>
+                <span asp-validation-for="Income" class="text-danger"></span><br>
+                
+                <input class="form-control mt-1" asp-for="SocialMediaLink" name="SocialMediaLink" id="SocialMediaLink"
+                    placeholder="Social Media" required><br>
+                <span asp-validation-for="SocialMediaLink" class="text-danger"></span><br>
+
+                <input class="form-control mt-1" asp-for="Telephone" name="Telephone" id="Telephone"
+                    placeholder="Telephone" required><br>
+                <span asp-validation-for="Telephone" class="text-danger"></span><br>
+                
+
+                <button class="mt-2 btn btn-success" type="submit">Register</button>
+            </div>
+
+        </form>
+    </div>
 </div>
-

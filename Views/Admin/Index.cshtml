@@ -1,1 +1,66 @@
-﻿<h2>This is admin page</h2>
+﻿@model IEnumerable<Swift.Models.UserAccount>
+@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+    
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+    <title>@ViewData["Title"] Swift - Admin</title>
+</head>
+
+<section id="hero" class="d-flex align-items-center">
+    <div class="container-fluid" data-aos="fade-up">
+        <div class="row justify-content-center">
+            <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                <h1>Admin</h1>
+            </div>
+            <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
+                <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container-fluid mt-5">
+    <h2>Profile</h2>
+    <table class="table">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Date Of Birth</th>
+            <th>Occupation</th>
+            <th>Income</th>
+            <th>Social Media Link</th>
+            <th>Telephone</th>
+            <th>Created At</th>
+        </tr>
+
+        @if (Model == null)
+        {
+            <h2>Nothing here</h2>
+        }
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.UserId</td>
+                <td>@item.Username</td>
+                <td>@item.Email</td>
+                <td>@item.Dob.ToString("d")</td>
+                <td>@item.Occupation</td>
+                <td>@item.Income</td>
+                <td>@item.SocialMediaLink</td>
+                <td>@item.Telephone</td>
+                <td>@item.CreatedAt</td>
+                <td><a class="btn btn-warning">Edit</a></td>
+                <td>
+                    <a class="btn btn-danger" asp-controller="Admin" asp-action="Delete" asp-route-id="@item.UserId">Delete</a>
+                </td>
+            </tr>
+        }
+    </table>
+    <a class="btn btn-success" asp-action="ExportToExcel">Export</a>
+</div>

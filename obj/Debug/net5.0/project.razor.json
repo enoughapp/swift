@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/panitarn/Projects/Swift/Swift.csproj",
+  "FilePath": "/Users/panitarn/Desktop/Enough/Swift/Swift.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15619,52 +15619,52 @@
   "RootNamespace": "Swift",
   "Documents": [
     {
-      "FilePath": "/Users/panitarn/Projects/Swift/Views/Shared/_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/panitarn/Projects/Swift/Views/_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/panitarn/Projects/Swift/Views/Shared/Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/panitarn/Projects/Swift/Views/Shared/_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/panitarn/Projects/Swift/Views/Account/Login.cshtml",
-      "TargetPath": "Views\\Account\\Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/panitarn/Projects/Swift/Views/Account/Profile.cshtml",
-      "TargetPath": "Views\\Account\\Profile.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/panitarn/Projects/Swift/Views/Account/Register.cshtml",
-      "TargetPath": "Views\\Account\\Register.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/panitarn/Projects/Swift/Views/_ViewStart.cshtml",
+      "FilePath": "/Users/panitarn/Desktop/Enough/Swift/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/panitarn/Projects/Swift/Views/Admin/Index.cshtml",
+      "FilePath": "/Users/panitarn/Desktop/Enough/Swift/Views/Account/ErrorAccount.cshtml",
+      "TargetPath": "Views\\Account\\ErrorAccount.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/panitarn/Desktop/Enough/Swift/Views/Admin/Index.cshtml",
       "TargetPath": "Views\\Admin\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/panitarn/Projects/Swift/Views/Home/Index.cshtml",
+      "FilePath": "/Users/panitarn/Desktop/Enough/Swift/Views/Shared/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/panitarn/Desktop/Enough/Swift/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/panitarn/Desktop/Enough/Swift/Views/Account/Register.cshtml",
+      "TargetPath": "Views\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/panitarn/Desktop/Enough/Swift/Views/_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/panitarn/Desktop/Enough/Swift/Views/Account/Login.cshtml",
+      "TargetPath": "Views\\Account\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/panitarn/Desktop/Enough/Swift/Views/Account/Profile.cshtml",
+      "TargetPath": "Views\\Account\\Profile.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/panitarn/Desktop/Enough/Swift/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     }
